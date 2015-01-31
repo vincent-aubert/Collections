@@ -1,0 +1,25 @@
+{
+  "name": "vincent-aubert/Collections",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vincent-aubert/Collections",
+  "authors": [
+    "Vince <vincent_aubert@live.fr>"
+  ],
+  "main": "index.html",
+  "keywords": [
+    "Array",
+    "Collection",
+    "Javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.7.0"
+  }
+}
