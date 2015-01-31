@@ -1,15 +1,14 @@
 (function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
-		define(['underscore', 'exports'], function (_, exports) {
-			root.Collection = factory(root, _, exports);
+		define(['underscore'], function (_) {
+			return (root.returnExportsGlobal = factory(_));
 		});
-	} else if (typeof exports !== 'undefined') {
-		var _ = require('underscore');
-		factory(root, exports, _);
+	} else if (typeof exports === 'object') {
+		module.exports = factory(require('underscore'));
 	} else {
-		root.Collection = factory(root, root._, {});
+		root.Collection = factory(root._);
 	}
-}(this, function (root, _) {
+}(this, function (_) {
 
 	var Collection = Array;
 
