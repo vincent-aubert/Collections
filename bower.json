@@ -1,7 +1,7 @@
 {
-  "name": "SimpleCollections",
+  "name": "simple-collection",
   "version": "0.0.1",
-  "homepage": "https://github.com/vincent-aubert/Collections",
+  "homepage": "https://github.com/vincent-aubert/simple-collections",
   "authors": [
     "Vince <vincent_aubert@live.fr>"
   ],
