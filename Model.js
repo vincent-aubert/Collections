@@ -25,6 +25,9 @@
 
 	var Model = function (options) {
 		this.uid = guid();
+		if (_.isFunction(options.init)) {
+			options.init.apply(this, []);
+		}
 		_.extend(this, options);
 	};
 
